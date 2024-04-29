@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* PERMET UN SCROLL DOUX */
+html{scroll-behavior: smooth}
+
+/* NAVIGATION */
+#navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: rgba(254, 245, 106, 0.93);
+    padding: 15px;
+}
+
+#menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+    margin-right: 50px;
+    list-style-type: none;
+}
+
+.menu-item {
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.menu-item:hover{
+    text-decoration: underline #7a60ff 2px solid;
+    text-underline-offset: 4px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* HEADER */
+#header {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #7a60ff;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    height: 100vh;
+}
+
+#header-title-container {
+    width: 40%;
+}
+
+#header-title {
+    color: #fdee03;
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+}
+
+#header-sub-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+#header-text {
+    color: white;
+    width: 60%;
+    text-align: justify;
+    font-size: 1.1rem;
+}
+
+#header-btn {
+    text-decoration: none;
+    background: #f9f14e;
+    padding: 5px;
+    margin-top: 15px;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+}
+
+#header-btn:hover {
+    background: #fdee03;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+#img-header {
+    width: 300px;
+    margin-left: 15px;
+}
+
+
+/* SECTION CODE */
+#code-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+#code-title-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#code-title {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.line {
+    height: 2px;
+    width: 250px;
+    background: #fdee03;
+    display: block;
+    margin: 20px auto;
+}
+
+#code-text {
+    text-align: center;
+    width: 35%;
+    font-size: 1.1rem;
+}
+
+#code-img-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    margin-top: -350px;
+}
+
+.code-img-block {
+    text-align: center;
+}
+
+.code-img {
+    width: 250px;
+    transition: ease-in-out 0.1s;
+}
+
+.code-img:hover {
+    transform: scale(1.1);
+}
+
+
+/* SECTION EXPERIENCE */
+#experience-container {
+    background: linear-gradient(rgba(122, 96, 255, 0.90), rgba(205, 159, 250, 0.90));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+#line-experience-top {
+    height: 2px;
+    width: 80%;
+    background: #f9f14e;
+    margin-top: 50px;
+}
+
+#experience-one {
+    width: 30%;
+}
+
+#experience-one h3 {
+    color: #fdee03;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#experience-one p {
+    color: white;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#experience-two {
+    width: 30%;
+}
+
+#experience-two h3 {
+    color: #fdee03;
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+#experience-two p {
+    color: white;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+#line-experience-bottom {
+    height: 2px;
+    width: 80%;
+    background: #f9f14e;
+}
+
+/* FOOTER */
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#footer p{
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#footer a {
+    text-decoration: none;
+    color:#8e1efc;
+    margin-top: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* NAVIGATION MOBILE */
+    #menu {
+        justify-content: center;
+    }
+
+    .menu-item {
+        font-size: 1.05rem;
+    }
+
+    /* HEADER MOBILE */
+    #header {
+        flex-wrap: wrap;
+        margin-top: -15px;
+    }
+
+    #header-title-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-title {
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    #header-sub-title {
+        text-align: center;
+    }
+
+    #header-text {
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    #header-btn {
+        margin-top: -10px;
+        font-size: 0.9rem;
+    }
+
+    #header-img-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+    }
+
+    #img-header{
+        width: 230px;
+    }
+
+    /* SECTION CODE MOBILE */
+    #code-content {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #code-title {
+        font-size: 1.6rem;
+    }
+
+    #code-text {
+        width: 80%;
+        font-size: 1.2rem;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+
+    .line {
+        width: 80%;
+    }
+
+    #code-img-container {
+        margin-top: 10px;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .code-img {
+        width: 180px;
+    }
+
+    /* SECTION EXPERIENCE MOBILE */
+    #experience-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    #experience-one {
+        width: 80%;
+    }
+
+    #experience-one h3 {
+        text-align: center;
+    }
+
+    #experience-one p {
+        width: 100%;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    #experience-two {
+        width: 80%;
+    }
+
+    #experience-two h3 {
+        text-align: center;
+    }
+
+    #experience-two p {
+        width: 100%;
+        text-align: justify;
+        font-size: 0.9rem;
+    }
+
+    /* FOOTER MOBILE */
+
+    #footer p{
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    #footer a {
+        font-size: 0.8rem;
+    }
+
+}
